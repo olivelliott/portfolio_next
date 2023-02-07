@@ -1,0 +1,71 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import designSystem from './ez-stream.png'
+
+export const meta = {
+  author: 'Olivia Elliott, Matt McGee, Alicia McNeil',
+  date: '2022-07',
+  title: 'Ez Stream',
+  description:
+    'An multi-page application where a user can look up a desired show or movie and find the available streaming services.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+A web application that searches for movie and show titles on IMDB and displays
+a results list that matches the user input. The user can then select 
+a specific title and be taken to a results page which will highlight 
+more information on that title. It will then provide a list the 
+streaming services that the title is available on for the user and 
+update the recent search result list for future reference.
+
+<Image src={designSystem} alt="screenshot of ez stream website" />
+
+[Depoloyed Site](https://mlmcgeenc.github.io/group-2-project-one/)
+
+[GitHub Repo](https://github.com/mlmcgeenc/group-2-project-one)
+
+
+## Languages 
+
+Javascript, jQuery, Server Side APIs, Figma
+
+## Description
+
+- When the search input is submitted, a results list will generate that matches the input description.
+- When the user selects a specific title, they will get taken to a results page that has a description of the title and a list of the available streaming services it can be found on.
+- Once the user selects a title, that choice will get appended to the recent searches footer for future reference.
+- The recent searches will be saved into local storage so that when the user refreshes the page, the recent searches will provide a reference point.
+
+
+## Contributions
+
+Brainstormed and pitched the project idea to the group of three others. We seared through
+APIs that we could use to implement the functionality of the application and then proceeded
+to wireframe the application in Figma. I worked with a group member in bridging up the connection between the API data
+and the results. I jumped to the front end of the group toward the end of the deadline
+to conform the styling, increase responsiveness, and utilize the color scheme we had conceptualized.
+
+
+## User Story
+
+```
+AS an avid movie and tv streamer,
+I WANT to look up my desired show,
+SO THAT I can find the streaming services it can be accessed on.
+
+GIVEN that I want to watch that show,
+WHEN I search for it,
+THEN a list of streaming services appear,
+SO THAT I can find the service that I am subscribed to,
+THEN I can view the quality of the video,
+SO THAT I can decide if I want to watch it
+```
+
+## Contributors
+
+Olivia Elliott | [GitHub](https://github.com/olivelliott)
+
+Matt McGee | [GitHub](https://github.com/mlmcgeenc)
+
+Alicia McNeil | [GitHub](https://github.com/aMcCode)
