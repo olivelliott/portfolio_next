@@ -1,22 +1,34 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
-import Image from 'next/image'
-import designSystem from './planetaria-design-system.png'
 
 export const meta = {
   author: 'Olivia Elliott',
-  date: '2022-08',
-  title: 'Hand Me Up',
+  date: '2023-01',
+  title: 'Hempire',
   description:
-    'A clothing re-sale application with a purpose that reduces the stigma of accepting low-cost clothing. Sellers list their clothing for sale at a rate that just covers shipping. Buyers can shop from a selection of low-cost but trendy and modern clothing. Buyers have the option to make an additional donation to a partner charity of their choice when making a purchase.',
+    'A responsive single page portfolio created for a local band to showcase their music for booking agents, sell merchandise to fans, and advertise upcoming shows.',
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-A clothing re-sale application with a purpose that reduces the stigma of accepting low-cost clothing. Sellers list their clothing for sale at a rate that just covers shipping. Buyers can shop from a selection of low-cost but trendy and modern clothing. Buyers have the option to make an additional donation to a partner charity of their choice when making a purchase.
+A responsive single page portfolio created for a local band to showcase their music for booking agents, sell merchandise to fans, and advertise upcoming shows.
+```js
+import { animate } from '@planetaria/animaginary'
 
-<Image src={designSystem} alt="" />
+export function MyComponent({ open, children }) {
+  return (
+    <animate.div
+      in={open}
+      animateFrom="opacity-0 scale-95"
+      animateTo="opacity-100 scale-100"
+      duration={350}
+    >
+      {children}
+    </animate.div>
+  )
+}
+```
 
-I knew that to get it right I was going to have to replicate the viewing conditions of someone from the future, so I grabbed my space helmet from the closet, created a new Figma document, and got to work.
+Animaginary is our new web animation library that redefines what you thought was possible on the web. Hand-written in optimized WASM, Animaginary can even animate the `height` property of an element at 60fps.
 
 ## Sermone fata
 

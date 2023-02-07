@@ -87,14 +87,14 @@ function ArrowDownIcon(props) {
 function Article({ article }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
+      <Card.Title href={`/projects/${article.slug}`}>
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>See Project</Card.Cta>
     </Card>
   )
 }
@@ -121,7 +121,7 @@ function Newsletter() {
         I'd love to join your team!
       </p>
       <div className="mt-6 flex">
-       {/* !!! FIX THIS */}
+        {/* !!! FIX THIS */}
         <input
           type="email"
           placeholder="Message"
@@ -130,9 +130,7 @@ function Newsletter() {
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         />
         <Button type="submit" className="ml-4 flex-none">
-          <a href='mailto:olivelliott48@gmail.com'>
-            Send
-          </a>
+          <a href="mailto:olivelliott48@gmail.com">Send</a>
         </Button>
       </div>
     </form>
@@ -214,7 +212,13 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button target='_blank' href="../images/Olivia_Elliott_Resume.pdf" download variant="secondary" className="group mt-6 w-full">
+      <Button
+        target="_blank"
+        href="../images/Olivia_Elliott_Resume.pdf"
+        download
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         View Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -253,9 +257,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Olivia Elliott
-        </title>
+        <title>Olivia Elliott</title>
         <meta
           name="description"
           content="I'm Olivia, a full stack developer based in Boone, NC. I'm looking for internship or employment opportunities in a collaborative and fast paced environment."
@@ -267,13 +269,18 @@ export default function Home({ articles }) {
             Hi, I'm Olivia.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I'm a dedicated full stack web developer trained at the UNC Chapel Hill Coding Bootcamp seeking employment in a 
-          challenging and collaborative environment. I'm effective at combining creativity and problem solving to develop responsive, user-friendly applications. 
+            I'm a dedicated full stack web developer trained at the UNC Chapel
+            Hill Coding Bootcamp seeking employment in a challenging and
+            collaborative environment. I'm effective at combining creativity and
+            problem solving to develop responsive, user-friendly applications.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Known as a proactive and hard working individual, I am focused on continuous operational improvement. I'm a highly motivated team player and a fast
-          learner, with strong communication skills, attention to detail, and adaptability. I'm proficient in an Agile environment 
-          always bringing curiosity and commitment to a job with a desire to see the company and project prosper. 
+            Known as a proactive and hard working individual, I am focused on
+            continuous operational improvement. I'm a highly motivated team
+            player and a fast learner, with strong communication skills,
+            attention to detail, and adaptability. I'm proficient in an Agile
+            environment always bringing curiosity and commitment to a job with a
+            desire to see the company and project prosper.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
