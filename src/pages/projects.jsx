@@ -11,10 +11,10 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Hand-Me-Up',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'An interactive multi-page MERN Stack e-commerce site where users exchange second hand clothing with an opportunity to donate to a non profit organization of their choosing.',
+    link: { href: 'http://polar-chamber-11415.herokuapp.com/', label: 'Hand Me Up' },
     logo: logoPlanetaria,
   },
   {

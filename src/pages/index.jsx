@@ -115,21 +115,24 @@ function Newsletter() {
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
+        <span className="ml-3">Connect with me</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
+        I'd love to join your team!
       </p>
       <div className="mt-6 flex">
+       {/* !!! FIX THIS */}
         <input
           type="email"
-          placeholder="Email address"
-          aria-label="Email address"
+          placeholder="Message"
+          aria-label="Message"
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         />
         <Button type="submit" className="ml-4 flex-none">
-          Join
+          <a href='mailto:olivelliott48@gmail.com'>
+            Send
+          </a>
         </Button>
       </div>
     </form>
@@ -139,35 +142,35 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'The Care Collective',
+      title: 'Operations Manager',
       logo: logoPlanetaria,
-      start: '2019',
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'UNC Chapel Hill',
+      title: 'Bootcamp Student',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      start: '2022',
+      end: '2022',
     },
     {
-      company: 'Starbucks',
+      company: 'Be Natural Market',
+      title: 'Retail Coordinator',
+      logo: logoAirbnb,
+      start: '2020',
+      end: '2021',
+    },
+    {
+      company: 'Melanies',
       title: 'Shift Supervisor',
       logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: '2015',
+      end: '2020',
     },
   ]
 
@@ -211,8 +214,8 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button target='_blank' href="../images/Olivia_Elliott_Resume.pdf" download variant="secondary" className="group mt-6 w-full">
+        View Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
@@ -251,27 +254,30 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Olivia Elliott
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I'm Olivia, a full stack developer based in Boone, NC. I'm looking for internship or employment opportunities in a collaborative and fast paced environment."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Hi, I'm Olivia.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+          I'm a dedicated full stack web developer trained at the UNC Chapel Hill Coding Bootcamp seeking employment in a 
+          challenging and collaborative environment. I'm effective at combining creativity and problem solving to develop responsive, user-friendly applications. 
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          Known as a proactive and hard working individual, I am focused on continuous operational improvement. I'm a highly motivated team player and a fast
+          learner, with strong communication skills, attention to detail, and adaptability. I'm proficient in an Agile environment 
+          always bringing curiosity and commitment to a job with a desire to see the company and project prosper. 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/oliv_e_lliott"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
@@ -281,12 +287,12 @@ export default function Home({ articles }) {
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/olivelliott"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/olivelliott"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
