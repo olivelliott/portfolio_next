@@ -121,7 +121,7 @@ function Newsletter() {
         <span className="ml-3">Connect with me</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        I'd love to join your team!
+        I&apos;d love to join your team!
       </p>
       <div className="mt-6 flex">
         {/* !!! FIX THIS */}
@@ -228,7 +228,7 @@ function Resume() {
         variant="secondary"
         className="group mt-6 w-full"
       >
-        <a href='https://www.credly.com/badges/d88da2f8-6ef1-4a90-8d60-c9c0d196e840/public_url' target='_blank'>
+        <a href='https://www.credly.com/badges/d88da2f8-6ef1-4a90-8d60-c9c0d196e840/public_url' target='_blank' rel="noreferrer">
           View Full Stack Certificate
         </a>
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
@@ -278,19 +278,19 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Hi, I'm Olivia.
+            Hi, I&apos;m Olivia.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm a dedicated full stack web developer trained at the UNC Chapel
+            I&apos;m a dedicated full stack web developer trained at the UNC Chapel
             Hill Coding Bootcamp seeking employment in a challenging and
-            collaborative environment. I'm effective at combining creativity and
+            collaborative environment. I&apos;m effective at combining creativity and
             problem solving to develop responsive, user-friendly applications.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Known as a proactive and hard working individual, I am focused on
-            continuous operational improvement. I'm a highly motivated team
+            continuous operational improvement. I&apos;m a highly motivated team
             player and a fast learner, with strong communication skills,
-            attention to detail, and adaptability. I'm proficient in an Agile
+            attention to detail, and adaptability. I&apos;m proficient in an Agile
             environment always bringing curiosity and commitment to a job with a
             desire to see the company and project prosper.
           </p>

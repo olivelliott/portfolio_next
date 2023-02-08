@@ -67,7 +67,7 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 As a kid, my head was always buried in a book or looking for something new to learn.
-                As I've grown, I've never lost my desire to challenge myself and continue
+                As I&apos;ve grown, I&apos;ve never lost my desire to challenge myself and continue
                 my education throughout my life. This led me into the world of coding, where I knew
                 that the possibilites of technology are endless. 
               </p>
@@ -79,7 +79,7 @@ export default function About() {
                 I attended 450+ hours of live instructional time, along with working on
                 asynchronous material, group projects, and individual assignments. I continued
                 my work as a full time Operations Manager at a rapidly expanding local business throughout the 
-                program which allowed me to perfect my time management skills. I'm ready and excited to shift my focus into the
+                program which allowed me to perfect my time management skills. I&apos;m ready and excited to shift my focus into the
                 world of technology and contribute to the community in any way that I can.
               </p>
               <p>
