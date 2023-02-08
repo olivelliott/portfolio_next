@@ -25,6 +25,9 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 
+import { Document } from 'react-pdf'
+
+
 function MailIcon(props) {
   return (
     <svg
@@ -122,15 +125,15 @@ function Newsletter() {
       </p>
       <div className="mt-6 flex">
         {/* !!! FIX THIS */}
-        <input
+        {/* <input
           type="email"
           placeholder="Message"
           aria-label="Message"
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          <a href="mailto:olivelliott48@gmail.com">Send</a>
+        /> */}
+        <Button type="submit" className="flex-none">
+          <a href="mailto:olivelliott48@gmail.com">olivelliott48@gmail.com</a>
         </Button>
       </div>
     </form>
@@ -213,15 +216,24 @@ function Resume() {
         ))}
       </ol>
       <Button
-        target="_blank"
-        href="../images/Olivia_Elliott_Resume.pdf"
-        download
         variant="secondary"
         className="group mt-6 w-full"
       >
-        View Resume
+        <a href='OliviaElliott_Resume.pdf' download='OliviaElliott_Resume'>
+          Download Resume
+        </a>
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
+      <Button
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
+        <a href='https://www.credly.com/badges/d88da2f8-6ef1-4a90-8d60-c9c0d196e840/public_url' target='_blank'>
+          View Full Stack Certificate
+        </a>
+        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+      </Button>
+
     </div>
   )
 }
@@ -287,11 +299,6 @@ export default function Home({ articles }) {
               href="https://twitter.com/oliv_e_lliott"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
             />
             <SocialLink
               href="https://github.com/olivelliott"

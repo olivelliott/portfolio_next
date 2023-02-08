@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Olivia Elliott</title>
         <meta
           name="description"
-          content="I'm Olivia Elliott. I'm a forward thinking full stack developer with a love for learning."
+          content="I'm Olivia Elliott. I'm a forward-thinking Full Stack developer with a love for learning."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,7 +61,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I'm Olivia Elliott. I'm a forward thinking full stack developer 
+            I'm Olivia Elliott. I'm a forward-thinking Full Stack developer 
             with a knack for learning.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
@@ -78,8 +78,8 @@ export default function About() {
                 applications that utilize UI, front-end, and back-end technologies. 
                 I attended 450+ hours of live instructional time, along with working on
                 asynchronous material, group projects, and individual assignments. I continued
-                my work as a full time Operations Manager throughout the program which allowed
-                me to perfect my time management skills. I'm ready and excited to shift my focus into the
+                my work as a full time Operations Manager at a rapidly expanding local business throughout the 
+                program which allowed me to perfect my time management skills. I'm ready and excited to shift my focus into the
                 world of technology and contribute to the community in any way that I can.
               </p>
               <p>
