@@ -105,7 +105,7 @@ export default function About() {
               <SocialLink href="https://github.com/olivelliott" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://linkedin/in/olivelliott" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://linkedin.com/in/olivelliott" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
