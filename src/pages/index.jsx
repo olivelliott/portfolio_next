@@ -18,6 +18,7 @@ import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import logoAirbnb from '@/images/logos/airbnb.svg'
+import aktigaLogomark from '@/images/logos/aktiga_Logomark.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
@@ -143,35 +144,28 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
+        company: 'Aktïga',
+        title: 'Lead Full Stack Developer',
+        logo: aktigaLogomark,
+        start: '2023',
+        end: {
+          label: 'Present',
+          dateTime: new Date().getFullYear(),
+        },
+      },
+      {
+        company: 'UNC Chapel Hill',
+        title: 'Bootcamp Student',
+        logo: logoFacebook,
+        start: '2022',
+        end: '2022',
+      },
+    {
       company: 'The Care Collective',
       title: 'Operations Manager',
       logo: logoPlanetaria,
       start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
-    {
-      company: 'UNC Chapel Hill',
-      title: 'Bootcamp Student',
-      logo: logoFacebook,
-      start: '2022',
-      end: '2022',
-    },
-    {
-      company: 'Be Natural Market',
-      title: 'Retail Coordinator',
-      logo: logoAirbnb,
-      start: '2020',
-      end: '2021',
-    },
-    {
-      company: 'Melanies',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2015',
-      end: '2020',
+      end: '2023'
     },
   ]
 
@@ -280,6 +274,9 @@ export default function Home({ articles }) {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Hi, I&apos;m Olivia.
           </h1>
+          <h5 className='mt-6 text-zinc-700'>
+            Full Stack Developer | Spatial Software Engineer
+          </h5>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I&apos;m a dedicated full stack web developer trained at the UNC Chapel
             Hill Coding Bootcamp seeking employment in a challenging and
